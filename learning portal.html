@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Learning Portal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">DSA Mastery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#course">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>                                                                                                                                                                                       
+                    <li class="nav-item">
+                        <a class="nav-link" href="#progress">My Progress</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#login" class="btn btn-outline-light me-2" data-bs-toggle="modal">LogIn</a>
+                    <a href="#register" class="btn btn-primary" data-bs-toggle="modal">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Master Data Structures & Algorithms</h1>
+                    <p class="lead mb-4">A comprehensive 12-week course with Kunal Kushwaha's Java tutorials, LeetCode and GFG problems to help you crack coding interviews.</p>
+                    <a href="#course" class="btn btn-primary btn-lg me-2">Start Learning</a>
+                    <a href="#how-it-works" class="btn btn-outline-secondary btn-lg">How It Works</a><br>
+                </div>
+                <div class="col-lg-6" style="margin-top: 20px;">
+                    <img src="https://codeofcode.org/wp-content/uploads/2023/01/Learn-DSA-with-Java-Image.jpeg" alt="DSA Illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">How to Use This Portal</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box bg-primary mb-3 mx-auto">
+                                <i class="fas fa-user-plus text-white"></i>
+                            </div>
+                            <h5>1. Create Account</h5>
+                            <p>Register using the sign-up option to track your progress across the 12-week course.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box bg-success mb-3 mx-auto">
+                                <i class="fas fa-calendar-alt text-white"></i>
+                            </div>
+                            <h5>2. Follow Weekly Plan</h5>
+                            <p>Each week has video lectures, theory, and coding problems from multiple platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box bg-info mb-3 mx-auto">
+                                <i class="fas fa-check-circle text-white"></i>
+                            </div>
+                            <h5>3. Track Progress</h5>
+                            <p>Mark topics as completed and track your weekly progress through the dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Outline Section -->
+    <section id="course" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">12-Week DSA Course</h2>
+            <div class="accordion" id="courseAccordion">
+                <!-- Week 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week1">
+                            Week 1: Introduction to Java 
+                        </button>
+                    </h2>
+                    <div id="week1" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/wn49bJOYAZM?si=n9-jShn2RRQIXoyW" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Introduction to Programming
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/lhELGQAV4gg?si=dG-ea0m1GTZQT9P8" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Flow of Program
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/4EP8YzcN0hQ?si=JKQuHPSUoEGUJ0zd" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Architecture & Installation
+                                            </a>
+                                        </li>
+                                                                                <li class="list-group-item">
+                                            <a href="https://youtu.be/TAtrPoaJ7gc?si=NUtU-ME97zH2VP19" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>First Java Program:Input/Output,etc.
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+<div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/blob/main/assignments/01-flow-of-program.md" target="_blank" class="btn btn-primary">
+        View Week 1 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 1 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week2">
+                            Week 2: Conditional Statements,Loops and Functions/Methods
+                        </button>
+                    </h2>
+                    <div id="week2" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/ldYLYRNaucM?si=VkMAWk-Cm-gmHJxR" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Conditional Statements and Loops
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/mA23x39DjbI?si=h65mro7M4MEfBb3t" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Switch Statement
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/vvanI8NRlSI?si=d7ItERY1qWMKLEPR" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Functions/Methods
+                                            </a>
+                                        </li>
+                                                                                
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+<div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/blob/main/assignments/03-conditionals-loops.md" target="_blank" class="btn btn-primary">
+        View Week 2 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 2 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week3">
+                            Week 3: Arrays and Searching
+                        </button>
+                    </h2>
+                    <div id="week3" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/n60Dn0UsbEk?si=XRTcWrTsBv_sVitq" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Arrays & ArrayLists
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/_HRA37X8N_Q?si=hWatDXrvCQRO1O6o" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Linear Search
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/f6UU7V3szVw?si=OyItCx7Xnn0Kl_8o" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Binary Search-Intro
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/W9QJ8HaRvJQ?si=7Vgjf4TwkkLIeZyl" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Binary Search Problems
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/enI_KyGLYPo?si=D0aVJX1wjF6LGFOG" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Binary Search in 2D Arrays
+                                            </a>
+                                        </li>
+                                                                                
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+<div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 3 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 3 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week4">
+                            Week 4: Sorting Algorithms
+                        </button>
+                    </h2>
+                    <div id="week4" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/F5MZyqRp_IM?si=SgazkGcFoJv2-vbP" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Bubble Sort
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/Nd4SCCIHFWk?si=y4kREcWzQUok6V40" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Selection Sort
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/By_5-RRqVeE?si=bvvr6-okJxlIFmHH" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Insertion Sort
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/JfinxytTYFQ?si=RbSqYwaxOqAo8qLq" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Cyclic Sort
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/iKGAgWdgoRk?si=UjXlicvErHHFonq5" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Merge Sort
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/Z8svOqamag8?si=brRJIjSH-2YaI3Gn" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Quick Sort
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/FOo820lJV1Y?si=0LBZsZfm9f5DK9Nw" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Count Sort
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/mLi6VQDqAOs?si=2aYaueHBIzfPrxzT" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Radix Sort
+                                            </a>
+                                        </li>
+                                        
+                                                                            
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+                                        <div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 4 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 4 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week5">
+                            Week 5: Object Oriented Programming
+                        </button>
+                    </h2>
+                    <div id="week5" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/BSVKUk58K6U?si=N85S_1gvjlw43RPe" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>OOP 1
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/_Ya6CN13t8k?si=i-WEV4uDtew84z3a" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>OOP 2
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/By_5-RRqVeE?si=bvvr6-okJxlIFmHH" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>OOP 3
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/W145DXs8fFg?si=YSxzt_H-W1zTmI0K" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>OOP 4
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/rgHZa7-Dibg?si=G5gEfktMjhwLDdT0" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>OOP 5
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/OY2lPr8h93U?si=CbIfUAaUQayKx82T" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>OOP 6
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/9ogGan-R1pc?si=hdwHsxJHAji0nGeK" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>OOP 7
+                                            </a>
+                                        </li>
+            
+                                                                            
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+<div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 5 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 5 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week6">
+                            Week 6: Strings and Patterns
+                        </button>
+                    </h2>
+                    <div id="week6" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/zL1DPZ0Ovlo?si=6_T7lpq52H-0ZMXi" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Strings and StringBuilders
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/lsOOs5J8ycw?si=E5i39ZlZEvZqE7IQ" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Patterns
+                                            </a>
+                                        </li>
+
+                                                                                
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+<div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 6 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 6 as Complete</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                                                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week7">
+                            Week 7: Complexities and Maths
+                        </button>
+                    </h2>
+                    <div id="week7" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/mV3wrLBbuuE?si=kXL-ctOKwaqanALd" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Time and Space Complexities
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/fzip9Aml6og?si=926Pvo97IQFS5jDs" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Maths For DSA-1
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/lmSpZ0bjCyQ?si=VIw9SgOQCpCXtpC9" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Maths For DSA-2
+                                            </a>
+                                        </li>
+
+                                                                                
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+<div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 7 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 7 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week8">
+                            Week 8: Recursion
+                        </button>
+                    </h2>
+                    <div id="week8" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/M2uO2nMT0Bk?si=UUwFyu6HcljnbYY_" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 1
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/JxILxTwHukM?si=rjsEY-8eKULWgfk4" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 2
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/sTdiMLom00U?si=ff1VXvjE6HLM7mIn" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 3
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/ymgnIIclCF0?si=4wppzbDKM8MmJRn5" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 4
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/gdifkIwCJyg?si=TvJT3V8mr3KunJQL" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 5
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/gDGw0cvFXPQ?si=GEWW1Js3N7sTGy6S" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 6
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/9ByWqPzfXDU?si=VLxj3G-DEvt_7qx_" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 7
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/zg5v2rlV1tM?si=djWv6fbQ5Ju_Gv-X" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 8
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/nC1rbW2YSz0?si=8B_BeOXbyzguVoIt" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Recursion 9
+                                            </a>
+                                        </li>                               
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+<div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 8 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 8 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week9">
+                            Week 9: LinkedList
+                        </button>
+                    </h2>
+                    <div id="week9" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/58YbpRDc4yw?si=BWcLnrSflAcLNbe6" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Linkedlist 1
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/70tx7KcMROc?si=g9L-jbzavfvYWAyJ" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Linkedlist 2
+                                            </a>
+                                        </li>                                 
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+
+                                        <div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 9 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 9 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week10">
+                            Week 10: StackandQueues
+                        </button>
+                    </h2>
+                    <div id="week10" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/rHQI4mrJ3cg?si=PY8PdADEpcuUKdRY" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>StackandQueues 1
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/S9LUYztYLu4?si=VdKRuLs0QK1a5idj" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>StackandQueues 2
+                                            </a>
+                                        </li>                                 
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+
+                                        <div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 10 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 10 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week11">
+                            Week 11: Trees
+                        </button>
+                    </h2>
+                    <div id="week11" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/4s1Tcvm00pA?si=pTra13pauSHvbeCY" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Binary Trees
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/CVA85JuJEn0?si=J4KrCezomMnnzdKz" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>AVL Trees
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/ciHThtTVNto?si=0PIFndi6-jtB2vfm" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Segment Trees
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/9D-vP-jcc-Y?si=wOCu8JVrV0JthB1e" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Binary Tree Questions
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/LFGBTFxHJII?si=mTlznfxuUMZTTx9J" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Traversal 1
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/Qdr3ohMSxBo?si=A5qTby6aarOahwF3" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Traversal 2
+                                            </a>
+                                        </li>
+                                                                   
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+<div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 11 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 11 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                                                <div class="accordion-item">
+                    <h2 class="accordion-header" id="week1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week12">
+                            Week 12: Heaps
+                        </button>
+                    </h2>
+                    <div id="week12" class="accordion-collapse collapse" aria-labelledby="week1Heading" data-bs-parent="#courseAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Video Lectures</h5>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item">
+                                            <a href="https://youtu.be/Qf-TDPr0nYw?si=m3VEHhGrQQyEnckP" target="_blank">
+                                                <i class="fab fa-youtube text-danger me-2"></i>Heaps
+                                            </a>
+                                        </li>
+                            
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Coding Problems</h5>
+                                    <ul class="list-group">
+
+                                        <div class="d-grid gap-2">
+    <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments" target="_blank" class="btn btn-primary">
+        View Week 12 Problems
+    </a>
+</div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-outline-success mark-complete" data-week="1">Mark Week 12 as Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!-- Resources Section -->
+    <section id="resources" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Additional Resources</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Kunal Kushwaha's Playlist</h5>
+                            <p class="card-text">Complete Java + DSA course with theory and implementation.</p>
+                            <a href="https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ" target="_blank" class="btn btn-danger">
+                                <i class="fab fa-youtube me-2"></i>Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">LeetCode Problems</h5>
+                            <p class="card-text">Curated list of problems to practice for coding interviews.</p>
+                            <a href="https://leetcode.com/problemset/all/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-code me-2"></i>Solve Problems
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">GeeksforGeeks</h5>
+                            <p class="card-text">Theory articles and company-specific question banks.</p>
+                            <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" class="btn btn-success">
+                                <i class="fas fa-laptop-code me-2"></i>Visit GFG
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracking Section -->
+    <section id="progress" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">My Progress</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Course Completion</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="progress mb-3" style="height: 30px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 8%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">8%</div>
+                            </div>
+                            <p>You've completed 1 out of 12 weeks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">Completed Weeks</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 1: Introduction to Java
+                                    <span class="badge bg-success rounded-pill"><i class="fas fa-check"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 2: Conditional Statements, Loops and Functions/Methods
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 3: Arrays and Searching
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 4: Sorting Algorithms
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 5: Object Oriented Programming
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 6: Strings and Patterns
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 7: Complexities and Maths
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 8: Recursion
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 9: LinkedList
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 10: Stack and Queues
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 11: Trees
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Week 12: Heaps
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-times"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button id="resetProgress" class="btn btn-warning">
+                    <i class="fas fa-sync-alt me-2"></i>Reset My Progress
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="login" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#forgot-password" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <p>Don't have an account? <a href="#register" data-bs-toggle="modal" data-bs-dismiss="modal">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="register" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create an Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="registerConfirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <p>Already have an account? <a href="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>DSA Mastery</h5>
+                    <p>A comprehensive learning portal for mastering Data Structures and Algorithms.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#course" class="text-white">Course</a></li>
+                        <li><a href="#resources" class="text-white">Resources</a></li>
+                        <li><a href="#progress" class="text-white">Progress</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://github.com/dhivyadharshini360" class="text-white"><i class="fab fa-github me-2"></i>GitHub</a></li>
+                        
+                        <li><a href="https://www.linkedin.com/in/dhivya-dharshini-0b53b7295/" class="text-white"><i class="fab fa-linkedin me-2"></i>LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 DSA Mastery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
